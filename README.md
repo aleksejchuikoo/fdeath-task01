@@ -2,4 +2,4 @@
 
 ### Переход к первому таску
 
-> https://aleksejchuikoo.github.io/fdeath-task01/
+> https://aleksejchuikoo.github.io/fdeath-task01/app/
