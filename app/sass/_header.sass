@@ -1,0 +1,40 @@
+.section-header
+  background-color: $greeting-bg
+  color: $greeting
+  height: 100vh
+  text-transform: uppercase
+  position: relative
+  padding-bottom: 100px
+  &-content
+    display: flex
+    flex-direction: column
+    align-items: center
+  &-logo
+    padding: 64px 0 125px
+  &__title
+    font-size: 45px
+    font-family: $montserrat
+    font-weight: bold
+    text-align: center
+    text-shadow: 8px 8px 10px rgba(#000, .24)
+    span
+      background-color: $greeting-accent
+      padding: 0 16px
+  &-button
+    padding: 16px 45px
+    margin-top: 116px
+    border: 2px solid $contact-border
+    color: $contact-color
+    font-size: 18px
+    font-family: $montserrat
+    font-weight: normal
+    transition: .2s linear
+    cursor: pointer
+    &:hover
+      color: $greeting-bg
+      background-color: $contact-border
+  &-bucket
+    display: inline-block
+    position: absolute
+    right: 175px
+    bottom: 10px

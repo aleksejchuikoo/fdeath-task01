@@ -1,0 +1,60 @@
+.section-adress
+  background: url(../images/dest/adress-bg.jpg) no-repeat top center / cover;
+  padding-top: 120px
+  padding-bottom: 126px
+  &-wrapper
+    display: flex
+    justify-content: center
+  &__form, &-location
+    background-color: rgba($form-bg, .95)
+  &__form
+    margin-right: 25px
+    flex-grow: .6
+    padding: 35px 30px
+    color: $adress-text
+    input
+      display: block
+      background: transparent
+      outline: none
+      border: none
+    input[type="submit"]
+      padding: 17px 34px
+      background-color: $accent
+      font-family: $montserrat
+      font-size: 18px
+      color: #214744
+      text-transform: uppercase
+      border-radius: 3px
+      letter-spacing: 1px
+      margin-top: 36px
+      cursor: pointer
+      transition: .2s
+      &:hover
+        background-color: darken($accent, 20%)
+    input[type="text"], input[type="email"]
+      border-bottom: 1px solid $adress-text
+      padding: 18px 0
+      font-size: 15px
+      width: 100%
+      color: $adress-text
+    input:focus, textarea:focus
+      border-bottom: 1px solid $accent
+    textarea
+      display: block
+      width: 100%
+      border: none
+      background: transparent
+      font-family: $montserrat
+      font-size: 15px
+      padding-bottom: 90px
+      padding-top: 30px
+      color: $adress-text
+      border-bottom: 1px solid $adress-text
+      resize: none
+  &-location
+    flex-grow: .4
+    padding: 30px 22px 20px
+    color: $footer-text
+    p
+      margin-bottom: 26px
+      font-size: 15px

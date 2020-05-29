@@ -1,0 +1,60 @@
+.section-team
+  background-color: $about-bg
+  padding-bottom: 170px
+  &__wrapper
+    margin-top: 120px
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-around
+    &-person
+      margin: 0 0 15px 15px
+      position: relative
+      cursor: pointer
+      overflow: hidden
+      width: 30%
+      height: 440px
+    &-info
+      width: 91%
+      background-color: $accent
+      position: absolute
+      bottom: 15px
+      left: 50%
+      transform: translate(-50%, 300px)
+      transition-duration: .3s
+    &-pointer
+      position: relative
+      padding: 42px 36px
+      &::before
+        content: ''
+        position: absolute
+        left: 22px
+        top: -30px
+        border: 15px solid transparent
+        border-bottom: 20px solid $accent
+
+.section-team__wrapper-person:hover .section-team__wrapper-info
+  display: block
+  transform: translate(-50%, 0)
+
+.name
+  font-family: $merriweather
+  font-weight: bold
+  font-size: 20px
+  color: $team-name
+  .profession
+    color: $team-profession
+    font-size: 15px
+    font-weight: normal
+    font-style: italic
+
+.contacts
+  display: flex
+  margin-top: 40px
+  &__item
+    margin-right: 12px
+  &__link
+    color: $team-name
+    font-size: 14px
+    transition: .2s
+    &:hover
+      color: $team-profession

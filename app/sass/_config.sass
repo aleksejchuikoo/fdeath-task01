@@ -1,0 +1,90 @@
+// USER VARIABLES SECTION
+
+$accent: #6eeee4 // Accent Color
+$fontsize: 16px // Body Font Size
+
+$greeting: #505050
+$greeting-bg: #eff0f2
+$greeting-accent: #b2f2ee
+
+$title: #181919
+$subtitle: #5e5f5f
+
+$about-title: #3e3f3f
+$about-color: #404141 // Text Color
+$about-bg: #f8fafa // "About", "Small team" sections
+
+$team-name: #2c3938
+$team-profession: #767978
+
+$contact-color: #3c3c3d
+$contact-border: #777879
+
+$form-bg: #495862
+$adress-text: #b0b9bf
+$footer-text: #d4d5d5 // "Adress", "Footer"
+$footer-bg: #262b2e
+
+$system: -apple-system, BlinkMacSystemFont, Arial, sans-serif // System Font Family
+$raleway: Raleway, sans-serif // Roboto Font Family
+$montserrat: Montserrat, sans-serif
+$merriweather: Merriweather, sans-serif
+
+// Bootstrap compatible gutter variable => $gutter
+$grid-gutter-width: 20px
+$gutter: $grid-gutter-width
+
+// FONTS LOAD SECTION
+
+@mixin font($fname, $fstyle, $fweight, $furl)
+	@font-face
+		font-family: $fname
+		font-style: $fstyle
+		font-weight: $fweight
+		// font-display: swap // Uncomment to initially display system fonts
+		src: local($fname), url($furl) format('woff2')
+
+@include font('Raleway', normal, 400, '../fonts/ralewayregular.woff2')
+@include font('Montserrat', normal, 400, '../fonts/Montserrat-Regular.woff2')
+@include font('Montserrat', bold, 700, '../fonts/Montserrat-Bold.woff2')
+@include font('Merriweather', normal, 400, '../fonts/Merriweather-Regular.woff2')
+@include font('Merriweather', bold, 700, '../fonts/Merriweather-Bold.woff2')
+// GENERAL DOCUMENT STYLES
+
+::placeholder
+	color: #b1babf
+
+::selection
+	background-color: $accent
+	color: #2b3231
+
+input, textarea
+	outline: none
+	&:focus:required:invalid
+		border-color: red
+	&:required:valid
+		border-color: green
+
+body
+	font-family: $raleway
+	font-size: $fontsize
+	font-weight: normal
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	overflow-x: hidden
+	color: $about-color
+
+
+*
+  box-sizing: border-box
+
+/* Убираем внутренние отступы */
+ul, ol
+	padding: 0
+	list-style: none
+
+/* Убираем внешние отступы */
+body, h1, h2, h3, h4, p, ul, ol, li, figure, figcaption,blockquote, dl, dd 
+  margin: 0
+
