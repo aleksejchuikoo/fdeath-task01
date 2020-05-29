@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", function() {
 	let imgs = document.getElementsByClassName("img");
 	let modalImg = document.getElementsByClassName("modal-content");
 	let caption = document.getElementsByClassName('caption');
+	let span = document.getElementsByClassName('close');
 
 	for (let i = 0; i < imgs.length; i++) {
 		imgs[i].onclick = function() {
@@ -12,8 +13,6 @@ document.addEventListener("DOMContentLoaded", function() {
 			caption[i].innerHTML = this.alt;
 		}
 	}
-
-	let span = document.getElementsByClassName('close');
 
 	for (let i = 0; i < span.length; i++) {
 		span[i].onclick = function() {
